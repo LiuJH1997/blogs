@@ -1,0 +1,171 @@
+@charset "utf-8";
+#content .wrap1200 {
+  margin: 50px auto 200px;
+}
+#content .wrap1200 h2 {
+  padding-top: 40px;
+  font-size: 22px;
+  font-weight: normal;
+}
+#content .wrap1200 .checked {
+  background-position: -408px -96px;
+}
+#content .wrap1200 .uncheck {
+  background-position: -408px -42px;
+}
+#content .wrap1200 .halfcheck {
+  background-position: -408px -69px;
+}
+.carts_box {
+  width: 1100px;
+  margin: 20px auto;
+  border: 1px solid #7e7e7e;
+}
+.carts_box .no-good {
+  text-align: center;
+  border-top: 1px solid #7e7e7e;
+  line-height: 100px;
+  font-size: 24px;
+  letter-spacing: 10px;
+}
+.carts_box .carts_title {
+  width: 100%;
+  height: 60px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.carts_box .carts_title .choice_a {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: url(../images/common/sprites.png) no-repeat;
+}
+.carts_box .carts_title .carts-msg {
+  width: 200px;
+  text-align: center;
+  font-size: 18px;
+}
+.carts_box .carts_content {
+  width: 100%;
+  font-size: 16px;
+  color: #605b5b;
+  border-top: 1px solid #7e7e7e;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.carts_box .carts_content .choice_b {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: url(../images/common/sprites.png) no-repeat;
+}
+.carts_box .carts_content .shopping {
+  width: 200px;
+  text-align: center;
+}
+.carts_box .carts_content .carts_commodity {
+  height: 90px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.carts_box .carts_content .carts_commodity .carts_com_left {
+  width: 80px;
+  height: 50px;
+}
+.carts_box .carts_content .carts_commodity .carts_com_left img {
+  width: 80px;
+  height: 100%;
+  background-size: cover;
+}
+.carts_box .carts_content .carts_commodity .carts_com_left .home-name {
+  font-size: 8px;
+  text-align: center;
+}
+.carts_box .carts_content .carts_commodity .carts_com_right {
+  font-size: 8px;
+  margin-left: 20px;
+}
+.carts_box .carts_content .number .symbol {
+  padding: 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.carts_box .carts_content .number .symbol:hover {
+  color: green;
+}
+.carts_box .carts_content .number input {
+  padding-left: 15px;
+  box-sizing: border-box;
+  width: 40px;
+  height: 20px;
+  border: 1px solid black;
+  outline: none;
+}
+.carts_box .carts_content .del {
+  cursor: pointer;
+}
+.carts_box .carts_content .del:hover {
+  color: red;
+}
+.total_box {
+  margin: 30px auto;
+  width: 1100px;
+  height: 60px;
+  background: #edecec;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.total_box .choice_a {
+  cursor: pointer;
+  margin-left: 8px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/common/sprites.png) no-repeat;
+}
+.total_box .con {
+  width: 400px;
+}
+.total_box .pitch .nums {
+  padding: 0 10px;
+  font-size: 18px;
+  color: red;
+}
+.total_box .total_wrap {
+  text-align: right;
+}
+.total_box .total_wrap .total_number {
+  font-size: 20px;
+  color: red;
+}
+.total_box .to_settle {
+  width: 200px;
+  height: 60px;
+  color: white;
+  font-size: 26px;
+  text-align: center;
+  line-height: 60px;
+  background: #c11a1a;
+  -webkit-transition: all .15s linear;
+  transition: all .15s linear;
+  cursor: pointer;
+}
+.total_box .to_settle:hover {
+  background: #ee2929;
+}

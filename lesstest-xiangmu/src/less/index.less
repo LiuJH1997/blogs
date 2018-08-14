@@ -1,0 +1,260 @@
+@charset "utf-8";
+@keyframes scale {
+    form{
+        opacity: 0;
+        transform: scale(.25);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    min-width: 1100px;
+}
+.warpper{
+    width: 1400px;
+    margin: 0 auto;
+}
+.item{
+    animation: scale .75s ease-out forwards paused;
+}
+.running{
+    animation-play-state: running;
+}
+.imb-box {
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: all .55s ease-out;
+    }
+    .show {
+        opacity: 1;
+    }
+}
+h2{
+    font-size: 18px;
+    .about-us {
+        padding-left: 10px;
+        font-size: 10px;
+        color: rgb(196, 191, 191);
+        font-weight: lighter;
+    }
+    hr{
+        width: 100%;
+        color: rgb(196, 191, 191);
+    }
+
+}
+.about-box{
+    width: 1300px;
+    height: 800px;
+    margin: 30px auto;
+    position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+    .brand{
+        width: 500px;
+        height: 210px;
+       
+        border-radius: 10px;
+        box-shadow: 0 0 33px white inset;
+        position: absolute;
+        top: 160px;
+        left: 40px;
+        .brand-title {
+            padding-left: 10px;
+            font-size: 24px;
+            color: rgb(41, 40, 40);
+        }
+        .brand-text {
+            padding: 0 10px;
+            text-indent: 2em;
+            font-size: 14px;
+            color: rgb(66, 66, 66);
+        }
+    }
+}
+.news {
+    width: 1300px;
+    height: 500px;
+    margin: 30px auto;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: space-between;
+    .news-left {
+        width: 69%;
+        box-sizing: border-box;
+        .news-box:first-child{
+            margin-bottom: 20px;
+
+        }
+        .news-box{
+            height: 240px;
+            display: flex;
+            border: 1px solid rgb(141, 140, 140);
+            box-sizing: border-box;
+            justify-content: space-between;
+            .news-box-left{
+                margin: 5px;
+                width: 30%;
+                height: 230px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    background-size: cover;
+                }
+            }
+            .news-box-right{
+                width: 70%;
+                font-size: 16px;
+                padding: 10px;
+                p{
+                    margin-top: 20px;
+                }
+
+            }
+        }
+    }
+    .news-right {
+        width: 30%;
+        height: 500px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+        }
+    }
+}
+
+.commodity {
+    width: 1300px;
+    margin: 30px auto; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    .commodity-box{
+        width: 300px;
+        height: 420px;
+        border: 1px solid rgb(172, 169, 169);
+        margin-bottom: 30px;
+        transition: all .35s ease-out;
+        &:hover{
+            box-shadow: 0 0 20px rgb(197, 195, 195);
+            transform: translateY(-5px);  
+        }
+        .com-box-img{
+            width: 100%;
+            height: 60%;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+            }
+            .glass{
+                font-size: 18px;
+                color: rgb(107, 107, 107);
+                text-align: center
+            }
+            .null{
+                width: 0;
+                height: 1px;
+                transition: all .45s linear;
+                background: #000;
+            }
+            
+            .glass-price{
+                padding-bottom: 20px;
+                text-align: center;
+                color: rgb(107, 107, 107);
+            }
+        }
+    }
+    .commodity-box:hover .null{
+        width:100%;
+    }
+}
+.scroll-box{
+    width: 100%;
+    margin: 0 auto;
+    img{
+        vertical-align: middle;
+    }
+    .scroll-img {
+        margin: 0 auto;
+        width: 100%;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .one{
+        background : url("../images/flash-01.jpg") fixed no-repeat center center;;
+        background-size: cover;
+    }
+    .two{
+        background : url("../images/flash-02.jpg") fixed no-repeat center center;;
+        background-size: cover;
+    }
+    .three{
+        background : url("../images/climber-01.jpg") fixed no-repeat center center;;
+        background-size: cover;
+    }
+
+}
+.text-box {
+    width: 600px;
+    height: 200px;
+}
+.scroll-img-title {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+.scroll-img-text {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+.bg-box {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: rgb(105, 105, 105);
+}
+.brand-img {
+    padding-top: 20px;
+    text-align: center;
+
+    img{
+        width: 100px;
+        height: 60px;
+        display: inline-block;
+        margin: 0 30px;
+    }
+}
+.copy {
+    width: 100%;
+    height: 500px;
+    background: rgb(68, 67, 67);
+}
+
